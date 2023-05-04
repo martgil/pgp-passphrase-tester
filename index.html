@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passphrase tester</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="bg-light">
+    <div class="wrapper">
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mt-5">
+                <div class="card-body">
+                  <h2 class="text-dark">Passphrase tester</h2>
+                  <span class="text-muted small">Please provide your PGP Private key and passphrase to verify message unlock. Note that no information will be stored on this webpage and the process will be done only on your browser.</span>
+                  <div class="mb-3">
+                    <textarea id="private-key" class="form-control" cols="12" rows="12" placeholder="PGP Private key" autofocus></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" id="passphrase" class="form-control" placeholder="passphrase"/>
+                  </div>
+                  <button id="test-passphrase" class="btn btn-success">Test passphrase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>
